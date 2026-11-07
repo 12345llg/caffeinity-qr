@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Caffeinity Surprise</title>
+
+    <style>
+        body {
+            background-color: #f5e6d3;
+            color: #4b2d1c;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        #quote {
+            font-size: 25px;
+            margin-top: 50px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+<h1>☕ CAFFEINITY ☕</h1>
+<h2>Thank You For Your Order!</h2>
+
+<p id="quote"></p>
+
+<script>
+    const quotes = [
+        "Caffeinity owes you a drink!",
+        "Oops! Caffeinity owes you a coffee!",
+        "Caffeinity owes you one cup of happiness!",
+        "Your coffee is on Caffeinity... just kidding!",
+        "Caffeinity owes you a drink of love!"
+    ];
+
+    const random = Math.floor(Math.random() * quotes.length);
+
+    document.getElementById("quote").textContent =
+        quotes[random];
+</script>
+
+<p>Demo only — not a real payment or redeemable voucher.</p>
+</body>
+</html>
